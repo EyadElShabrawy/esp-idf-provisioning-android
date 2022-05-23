@@ -259,14 +259,6 @@ public class ESPProvisionManager {
                     Log.d(TAG, "QR Code Data : " + scannedData);
 
                     try {
-                        // JSONObject jsonObject = new JSONObject(scannedData);
-
-                        // String deviceName = jsonObject.optString("name");
-                        // String pop = jsonObject.optString("pop");
-                        // String transport = jsonObject.optString("transport");
-                        // int security = jsonObject.optInt("security", 1);
-                        // String password = jsonObject.optString("password");
-
                         String[] qrCodeArray = scannedData.split(",");
 
                         String deviceName = qrCodeArray[1];
