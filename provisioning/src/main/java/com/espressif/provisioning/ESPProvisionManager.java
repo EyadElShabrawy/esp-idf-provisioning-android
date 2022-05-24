@@ -286,11 +286,11 @@ public class ESPProvisionManager {
 
                         if (!TextUtils.isEmpty(transport)) {
 
-                            if (transport.equalsIgnoreCase("softap")) {
+                            if (transport.equalsIgnoreCase("s")) {
 
                                 transportType = ESPConstants.TransportType.TRANSPORT_SOFTAP;
 
-                            } else if (transport.equalsIgnoreCase("ble")) {
+                            } else if (transport.equalsIgnoreCase("b")) {
 
                                 transportType = ESPConstants.TransportType.TRANSPORT_BLE;
 
