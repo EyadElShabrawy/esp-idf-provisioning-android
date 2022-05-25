@@ -243,6 +243,7 @@ public class ESPProvisionManager {
      */
     @RequiresPermission(allOf = {Manifest.permission.CAMERA, Manifest.permission.BLUETOOTH_ADMIN, Manifest.permission.BLUETOOTH, Manifest.permission.ACCESS_FINE_LOCATION})
     public void scanQRCode(final CodeScanner codeScanner, final QRCodeScanListener qrCodeScanListener) {
+        log.d("USING CORRECT LIBRARY");
 
         isScanned = false;
         List<BarcodeFormat> formats = new ArrayList<>();
@@ -259,6 +260,7 @@ public class ESPProvisionManager {
                     Log.d(TAG, "QR Code Data : " + scannedData);
 
                     try {
+                        log.d("USING CORRECT LIBRARY 2");
                         String[] qrCodeArray = scannedData.split(",");
 
                         String deviceName = qrCodeArray[1];
